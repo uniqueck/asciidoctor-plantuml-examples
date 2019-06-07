@@ -1,0 +1,5 @@
+ifndef::plantumlDir[:plantumlDir: ./plantuml/]
+
+= Asciidoctor examples
+
+plantuml::{plantumlDir}mindmap.puml[]
