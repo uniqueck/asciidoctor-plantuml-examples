@@ -1,10 +1,16 @@
 ifndef::plantUMLDir[:plantUMLDir: .plantuml/]
 ifndef::icons[:icons: font]
+ifndef::imagesdir[:imagesdir: images]
 
-= Asciidoctor examples
+== Level 1 Heading
+.generated plantuml diagram
+[plantuml, "{plantUMLDir}mindmap", png, align=center]
+----
+include::plantuml/mindmap.puml[]
+----
 
-plantuml::./plantuml/mindmap.puml["{plantUMLDir}mindmap", png, align=center]
-
-
-
+.static image
 image::mindmap.png[]
+
+<<<
+include::subdirectory/index.adoc[]
