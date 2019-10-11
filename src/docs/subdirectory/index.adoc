@@ -1,9 +1,10 @@
 ifndef::plantUMLDir[:plantUMLDir: .plantuml/]
 ifndef::icons[:icons: font]
+ifndef::imagesdir[:imagesdir: ../images]
 
 = Asciidoctor examples
 
-plantuml::./plantuml/mindmap.puml["{plantUMLDir}mindmap", png, align=center]
+plantuml::../plantuml/mindmap.puml["{plantUMLDir}mindmap", png, align=center]
 
 
 
