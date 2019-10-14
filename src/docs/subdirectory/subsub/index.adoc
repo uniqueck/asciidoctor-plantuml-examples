@@ -1,9 +1,3 @@
-ifndef::plantUMLDir[:plantUMLDir: .plantuml/]
-ifndef::icons[:icons: font]
-// ifndef::imagesdir[:imagesdir: ../../images]
-// uncomment the ifndef above and the image should appear, but the plantuml has an error
-
-
 ==== Level 3 Heading
 .generated plantuml diagram
 [plantuml, "{plantUMLDir}mindmap3", png, align=center]
