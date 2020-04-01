@@ -1,0 +1,11 @@
+@startuml
+
+!unquoted function SALT($x)
+"{{
+salt
+!include $x.salt.puml
+}}
+" as $x
+!endfunction
+
+@enduml

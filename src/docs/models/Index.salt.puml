@@ -1,0 +1,24 @@
+@startsalt
+
+{+
+
+{* Application | Menu Entry
+
+}
+
+<b> </b>
+<b>                 Index </b>
+<b> </b>
+
+{#
+
+    <b> </b> | <b> Column1 </b> | <b> Column2 </b>
+    x        | y                | z
+    x        | y1               | z1
+
+}
+
+
+}
+
+@endsalt

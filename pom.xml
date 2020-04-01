@@ -9,9 +9,10 @@
 
   <properties>
     <asciidoctor.maven.plugin.version>2.0.0-RC.1</asciidoctor.maven.plugin.version>
-    <asciidoctorj.version>2.0.0</asciidoctorj.version>
-    <asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
+    <asciidoctorj.version>2.1.0</asciidoctorj.version>
+    <asciidoctorj.diagram.version>2.0.1</asciidoctorj.diagram.version>
     <jruby.version>9.2.7.0</jruby.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <build>
@@ -21,11 +22,6 @@
         <artifactId>asciidoctor-maven-plugin</artifactId>
         <version>${asciidoctor.maven.plugin.version}</version>
         <dependencies>
-          <dependency>
-            <groupId>org.jruby</groupId>
-            <artifactId>jruby-complete</artifactId>
-            <version>${jruby.version}</version>
-          </dependency>
           <dependency>
             <groupId>org.asciidoctor</groupId>
             <artifactId>asciidoctorj</artifactId>
@@ -53,6 +49,8 @@
               <imagesDir>./images</imagesDir>
               <sourceDirectory>${basedir}/src/docs</sourceDirectory>
               <sourceDocumentName>index.adoc</sourceDocumentName>
+              <outputDirectory>${project.build.directory}/generated-docs</outputDirectory>
+              <outputFile>index.html</outputFile>
               <attributes>
                 <toc>left</toc>
               </attributes>

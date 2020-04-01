@@ -1,5 +1,12 @@
-ifndef::plantumlDir[:plantumlDir: ./plantuml/]
+ifndef::plantUMLDir[:plantUMLDir: .plantuml/]
+ifndef::icons[:icons: font]
+ifndef::imagesdir[:imagesdir: images]
 
-= Asciidoctor examples
+= Salt Include Bug
 
-plantuml::{plantumlDir}mindmap.puml[]
+[plantuml, {plantUMLDir}/Login.activity, png]
+----
+include::models/Login.activity.puml[]
+----
+
+plantuml::models/Login.activity.puml[{plantUMLDir}/Login.activity, png]

@@ -1,0 +1,12 @@
+@startuml
+
+!include common.activity.iuml
+
+(*) -> SALT(Login)
+if "Click 'OK'" then
+--->[Login succeed] SALT(Index)
+else
+--->[Login failed] SALT(Login)
+endif
+
+@enduml
